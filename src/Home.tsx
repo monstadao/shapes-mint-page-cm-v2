@@ -36,9 +36,9 @@ import { usePoller } from "./hooks/usePoller";
 //@ts-ignore
 import confetti from "canvas-confetti";
 require("./Bg.css");
-const IMAGE_LINK = "/animation.gif";
-const LOGO_LINK = "/logo.png";
+const IMAGE_LINK = "/aam.jpg";
 
+const LOGO_LINK = "/logo.png";
 function throwConfetti(): void {
   confetti({
     particleCount: 200,
@@ -52,20 +52,18 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(29deg, #fe4a49 0%, #aeeeb2 100%);
-  color: #614014;
+  font-family: 'Outfit', sans-serif;
+  background: #fde68a;
+  color: #ca8a04;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600  ;
 `;
 
 const StyledPaper = styled(Paper)`
   padding: 20px;
-  background-color: #eed2ae;
+  background-color: #34342f;
   border-radius: 6px;
   margin: 10px;
-  -webkit-box-shadow: 8px 8px 71px 0px rgba(83, 66, 90, 1);
-  -moz-box-shadow: 8px 8px 71px 0px rgba(83, 66, 90, 1);
-  box-shadow: 8px 8px 71px 0px rgba(83, 66, 90, 1);
 `;
 const MintContainer = styled.div``; // add your owns styles here
 
@@ -556,7 +554,7 @@ const Home = (props: HomeProps) => {
       )}
       <Box style={{ minHeight: "100vh", display: "flex" }} alignItems="center">
         <Container maxWidth="xs" style={{ position: "relative" }}>
-          <StyledPaper>
+        <StyledPaper>
             {" "}
             <img
               src={LOGO_LINK}
